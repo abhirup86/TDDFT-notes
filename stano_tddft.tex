@@ -1,0 +1,98 @@
+\documentclass[12pt]{article}
+\usepackage[utf8x]{inputenc}
+\usepackage[english]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{color}
+\usepackage{wrapfig}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{textcomp}
+\usepackage{array}
+\usepackage{booktabs}
+\usepackage{subfigure}
+\usepackage[font=small,format=plain,labelfont=bf,up,textfont=it,up]{caption}
+\usepackage{longtable}
+\usepackage{calc}
+\usepackage{setspace}
+\usepackage{multirow}
+\usepackage{hhline}
+\usepackage{ifthen}
+\usepackage{lscape}
+\usepackage{relsize}
+\usepackage{bbold}
+\usepackage{mathtext}
+\usepackage{pdfpages}
+\usepackage{geometry}
+ \geometry{
+ a4paper,
+ total={170mm,257mm},
+ left=35mm,
+ top=25mm,
+ bottom=25mm,
+ right=20mm,
+ }
+\usepackage{cite}
+\linespread{1.3}
+
+\begin{document}
+\begin{equation}
+i\partial \psi_{i} = [ F_{\psi_i}+V(t)]
+\text{\ \ \ \ \ \ }
+\psi_{i}(t) = d^{i}_{mn}(t) e^{{i\epsilon_{m}t}}\overline{\psi}_{m}
+\text{\ \ \ \ \ \ }
+F_{0} \psi_{p} = \epsilon_{p}\overline{\psi}_{p}
+\end{equation}
+\begin{equation}
+i\dot{d}^{i}_{m} = ( F_{nm} - \delta_{nm}\epsilon +V_{mn})d_{m}^{i}e^{i(\epsilon_{n}-\epsilon_{m}})t  
+\end{equation}
+
+\begin{equation}
+X_{nm} = \langle \psi_{n} | \hat{X} | \psi_{m} \rangle 
+\end{equation}
+\begin{equation}
+\langle \overline{\psi}_{p} | \overline{\psi}_{q} \rangle = \delta_{pq}
+\end{equation}
+\begin{equation}
+i\dot{d}_{m}^{0i} = 0 
+\text{\ \ \ \ \ \ }
+\psi_{i}(t_{0}) = d^{0i}_{m}\overline{\psi}_{m}
+\text{\ \ \ \ \ \ }
+\psi_{i}(t_{0}) = d^{0i}_{m} \neq \delta_{mi}
+\end{equation}
+\begin{equation}
+i\dot{d}_{m}^{1i} = ( F_{nm}^{1} + V_{nm}^{1}) d_{m}^{0i} e^{i(\epsilon_{n}-\epsilon_{m})}t
+\end{equation}
+\begin{equation}
+\rho_{k} = \psi^{\dagger}_{i}\Sigma_{k}\psi_{i} = 
+d^{i*}_{l}d_{s}^{i}e^{i(\epsilon_{l}-\epsilon_{s})}t \overline{\Psi}_{l}^{\dagger}\Sigma_{k}\overline{psi}_{s}
+\end{equation}
+\begin{equation}
+\rho_{k} = D_{sl}e^{i(\epsilon_{l}-\epsilon_{s})t}\Omega^{k}_{ls} 
+\end{equation}
+\begin{equation}
+\nabla \rho_{k} = D_{sk} e^{i(\epsilon_{l}-\epsilon_{s})t} \nabla \Omega_{ls}^{k}
+\end{equation}
+\begin{equation}
+F_{nm}^{1} = \frac{d F_{nm}}{d D_{sl} } D^{1}_{sl}
+= \frac{d \tilde{F}_{nm}}{d D_{sl} } e^{i(\epsilon_{j}-\epsilon_{s})t}((d_{l}^{0j})^{*} d_{s}^{1j} + (d_{l}^{1j})^{*} d_{s}^{0j} ) 
+\end{equation}
+\begin{equation}
+F_{nm}^{1} d_{m}^{0i} = F_{mi}^{1} =
+ K_{mi,sj} e^{i(\epsilon_{j}-\epsilon_{s})t}d_{s}^{1j} +
+ K_{mi,jl} e^{i(\epsilon_{l}-\epsilon_{j})t}(d_{s}^{1j})^{*}
+\end{equation}
+\begin{equation} 
+K_{mm, ls} = \frac{d \tilde{F}_{nm}}{d D_{sl}}
+\end{equation}
+\begin{equation}
+i\dot{d}^{1i}_{m} = 
+( K_{mi,lj} e^{i(\epsilon_{j} -\epsilon_{l})t}) +
+( K_{mi,jl} e^{i(\epsilon_{l} -\epsilon_{j})t})(d_{l}^{1j})^{*}
+\end{equation}
+\begin{equation}
+i\dot{d}^{1i}_{m} = \tilde{d}^{1i}_{m}e^{-i(\epsilon_{i}-\epsilon_{m})t}
+( K_{mi,lj} e^{i(\epsilon_{j} -\epsilon_{l})t}) +
+( K_{mi,jl} e^{i(\epsilon_{l} -\epsilon_{j})t})(d_{l}^{1j})^{*}
+\end{equation}
+
+\end{document}
